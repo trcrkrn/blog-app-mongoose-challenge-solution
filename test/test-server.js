@@ -11,7 +11,7 @@ const{BlogPost} = require('../models');
 const{app, runServer, closeServer} = require('../server');
 const {TEST_DATABASE_URL} = require('../config');
 
-chai.use(chaiHTTP);
+chai.use(chaiHttp);
 
 function seedBlogPostData() {
     console.info('seeding blog data');
